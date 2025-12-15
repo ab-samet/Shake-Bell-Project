@@ -1,0 +1,52 @@
+body{
+    background-color: bisque;
+}
+div{
+    text-align: center;
+}
+div i{
+    font-size: 10rem;
+    color: rebeccapurple;
+}
+
+.fa-bell{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: shake;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0.7s;
+    animation-iteration-count: 10.5;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.fa-dollar{
+    animation-name: dollar;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0.7s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+@keyframes shake {
+    0%{
+        transform: rotate(15deg);
+        transform-origin: top;
+
+    }
+    100%{
+        transform: rotate(-15deg);
+        transform-origin: top;
+        color: brown;
+    }
+}
+@keyframes dollar {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+        color: brown;
+    }
+}
